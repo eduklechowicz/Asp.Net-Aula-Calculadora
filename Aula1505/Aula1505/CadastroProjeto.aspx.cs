@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Aula1505.Model;
 
 namespace Aula1505
 {
@@ -19,7 +20,7 @@ namespace Aula1505
             Projeto Projeto = new Projeto();
             Projeto.Nome = txtNome.Text;
             Projeto.Descricao = txtDescricao.Text;
-            Projeto.Ativo = txtAtivo.Text;
+            Projeto.Ativo = chkAtivo.Text;
         }
         
         protected void btnCancelar_Click(object sender, EventArgs e)
